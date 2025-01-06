@@ -1,5 +1,5 @@
-from backend.utils.llm import LLM
 from backend.agents.base_agent import BaseAgent
+from backend.config.logger import logger
 
 
 class PMAgent(BaseAgent):

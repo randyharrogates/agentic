@@ -1,4 +1,5 @@
 from backend.interface.agent_interface import AgentInterface
+from backend.config.redis_client import RedisClient
 from utils.llm import LLM
 
 
@@ -29,6 +30,7 @@ class BaseAgent(AgentInterface):
             user_msg=user_msg,
             max_tokens=max_tokens,
         )
+        self.redis_client = RedisClient()
 
     def process(self) -> str:
         """

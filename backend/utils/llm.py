@@ -1,6 +1,7 @@
 import openai
 from backend.config.logger import logger
 
+
 class LLM:
 
     def __init__(
